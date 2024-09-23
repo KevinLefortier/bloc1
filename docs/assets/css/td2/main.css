@@ -1,0 +1,13 @@
+body{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+    padding: 25px;
+}
+
+h2{
+    color: blue;
+}
