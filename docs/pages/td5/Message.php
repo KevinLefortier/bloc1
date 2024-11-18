@@ -1,8 +1,5 @@
 <?php
-
-function message(string $message){}
-
-$_GET
+$message = isset($_GET['message']) ? $_GET['message'] : 'Message par défaut';
 ?>
 
 <!DOCTYPE html>
@@ -10,16 +7,15 @@ $_GET
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Affichage du Message</title>
+    <title>Affichage du message</title>
 </head>
 <body>
     <h1><?php echo htmlspecialchars($message); ?></h1>
 
-    <h2>3 liens hypertextes :</h2>
-    <ul>
-        <li><a href="message.php?message=Bonjour, ceci est le premier lien!">lien 1</a></li>
-        <li><a href="message.php?message=Voici le deuxième lien!">lien 2</a></li>
-        <li><a href="message.php?message=Ceci est le troisième lien!">lien 3</a></li>
-    </ul>
+    <p>
+        <a href="?message=Premier%20message">Premier message</a><br>
+        <a href="?message=Deuxième%20message">Deuxième message</a><br>
+        <a href="?message=Troisième%20message">Troisième message</a><br>
+    </p>
 </body>
 </html>
