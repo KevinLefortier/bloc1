@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>contact</title>
+        <link rel="stylesheet" href="C:\Users\klefortier\Documents\bloc1\docs\assets\css\td7\contact.css">
+    </head>
+    <body>
+    <div class="form-container">
+        <h1>Nous <br> contacter <br><br> <span>Nous serions ravis <br> de vous lire...</span></h1>
+
+        <form action="" method="post">
+            <label for="prenom">Prénom<span>*</span> :</label><br>
+            <input type="text" id="prenom" name="prenom" required pattern="[A-Za-zÀ-ÿ '-]+" title="Le prénom ne doit contenir que des lettres, des apostrophes et des espaces."><br><br>
+           
+            <label for="nom">Nom<span>*</span> :</label><br>
+            <input type="text" id="nom" name="nom" required pattern="[A-Za-zÀ-ÿ '-]+" title="Le nom ne doit contenir que des lettres, des apostrophes et des espaces."><br><br>
+        
+            <label for="email">Mail<span>*</span> :</label><br>
+            <input type="email" id="email" name="email" required title="L'adresse email doit être valide."><br><br>
+        
+            <label for="commentaire">Commentaire<span>*</span> :</label><br>
+            <textarea id="commentaire" name="commentaire" rows="4" cols="50" maxlength="500" required title="Le commentaire est limité à 500 caractères."></textarea><br><br>
+        
+            <button type="submit">Soumettre</button>
+        
+        </form>
+    </div>
+    </body>
+</html>
