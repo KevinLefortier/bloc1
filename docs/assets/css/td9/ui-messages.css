@@ -1,0 +1,16 @@
+
+.ui.container {
+    margin-top: 20px;
+}
+
+.ui.message {
+    margin-bottom: 20px;
+}
+
+#dynamicMessageArea {
+    margin-top: 20px;
+}
+
+#defaultMessage {
+    display: none;
+}
